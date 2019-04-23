@@ -1,0 +1,124 @@
+*{
+		
+	
+	
+}
+
+body{
+	background: #fafafa;
+	font-family: 'Assistant', sans-serif;
+}
+
+#signInBox{
+	
+	width:45%;
+	
+	
+	margin: 0 auto;
+	margin-top:20px;
+	padding:50px;
+	
+	padding-top:10px;
+					border: 3px double #41414e;
+				box-shadow: -1px 4px 26px -1px rgba(65,65,78,0.65);
+	
+
+}
+
+h2{
+    text-align:right;
+}
+
+#message{
+    width:50%;
+	margin: 0 auto;
+	position: relative;
+	bottom: 20px;
+	text-align: center;
+	direction: rtl;
+	font-weight: bold;
+}
+#signInBox form{
+	direction: rtl;
+	text-align: right;
+	padding: 20px;
+	color:#41414e;
+	position: relative;
+	right:20%;
+}
+
+#signInBox input:not([type='submit']){
+	
+				
+				background: none;
+				border:none;
+				border-bottom: 3px double #41414e;
+				border-radius: 10%;
+				background-color: #fafafa;
+				
+	
+}
+
+label{
+    width:80px;
+}
+
+footer{
+	background: none;
+	color:#f1f1f1;
+}
+
+footer ul a li{
+	color:white;
+}
+
+
+.text{
+		color:#41414e;
+		
+		
+	}
+	
+	footer{
+		color:#41414E;
+	}
+	
+	
+	
+.button {
+  display: inline-block;
+  line-height: 3em;
+  padding: 0 1em;
+  background: #3B3B47;
+  border-radius: 0.125em;
+  background-clip: padding-box;
+	color:#f1f1f1;
+  margin:5%;
+  margin-right: 3em;
+  
+}
+
+.button:before {
+    content: "\2190";
+}
+
+.button--plain {
+	background: #41414E;
+		
+}
+	
+	
+	
+@media (max-width: 576px){
+    #signInBox{
+	margin-top:10px;
+	width:90%;
+	padding:20px;
+	
+    }
+    #signInBox form{
+        position:relative;
+        right:10px;
+    }
+    
+}	
