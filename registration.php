@@ -1,5 +1,4 @@
 <?php
-require 'phpmailer/PHPMailerAutoload.php';
 require_once 'configur.php';
 
 ?>
@@ -61,7 +60,7 @@ if(empty($password)){
 		$sql = "INSERT INTO users (name, gender, email, phone, password) VALUES ('$name','$gender','$email','$phone','$password')";
 		mysqli_query($conn, $sql);
 		
-			$mail = new PHPMailer();
+
     	$mail->Host = "smtp.gmail.com";
     	$mail->SMTPSecure = "ssl";
     	$mail->Port = 465;
