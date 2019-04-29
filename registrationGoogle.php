@@ -68,25 +68,6 @@ if(empty($password)){
 		
 		$sql = "INSERT INTO users (name, gender, email, phone, password) VALUES ('$name','$gender','$email','$phone','$password')";
 		mysqli_query($conn, $sql);
-
- 
-    	$mail->Host = "smtp.gmail.com";
-    	$mail->SMTPSecure = "ssl";
-    	$mail->Port = 465;
-    	$mail->SMTPAuth = true;
-    	$mail->Username = 's.hatikva2018@gmail.com';
-    	$mail->Password = 'Rs123456';	
-    	$mail->setFrom('s.hatikva2018@gmail.com', 'שיפודי התקווה');
-    	$mail->addAddress('amitbendet@gmail.com' );
-    	$mail->Subject = "new user!";
-    	$mail->Body="יוזר חדש נרשם "."\n"."\n";
-    	$mail->Body.="$name "."\n"; 
-    	$mail->Body.="$email "."\n"; 
-    	$mail->Body.="$phone "."\n"; 
-        if ($mail->send())
-    	{
-    	    
-    	}
 	}
 	
 	
