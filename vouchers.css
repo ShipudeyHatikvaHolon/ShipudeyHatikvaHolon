@@ -1,0 +1,83 @@
+
+		body{
+background: #fafafa;
+			font-family: 'Assistant', sans-serif;	
+			
+}
+#nav ul a li{
+	color:#483D8B;
+}
+
+#manooy{
+margin:0 auto;
+	direction: rtl;
+	text-align: right;
+	border: 3px double #41414e;
+				box-shadow: -1px 4px 26px -1px rgba(65,65,78,0.65);
+	padding: 30px;
+	border-radius: 10px;
+	margin-bottom: 5%;
+}
+
+
+#manooy h2{
+	padding:5px;
+	
+	
+}
+#manooy form{
+	text-align: right;
+	padding: 2%;
+}
+
+#manooy form select {
+	border:none;
+	border-bottom: 1px solid #e5e5e5;
+	background: none;
+	padding-right: 10px;
+	font-size: 14px;
+	position: relative;
+	bottom: 5px;
+}
+
+.animate
+{
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+}
+
+.action-button
+{
+	position: relative;
+	padding: 5px 15px;
+  margin: 0px 10px 10px 0px;
+  float: right;
+	border-radius:6px;
+	
+	font-size: 20px;
+	color: #FFF;
+	text-decoration: none;	
+	
+}
+#showInfo{
+    position:relative;
+    right:2%;
+}
+.blue
+{
+	background-color: #483D8B;
+	border-bottom: 5px solid #191970;
+	text-shadow: 0px -1px #191970;
+}
+
+footer{
+    background:#fafafa;
+}
+
+@media (max-width:576px){
+    #manooy{
+
+     margin-top:20px;
+	width:90%;
+    }
+}
