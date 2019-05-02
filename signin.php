@@ -49,40 +49,7 @@ include_once 'header.php';
 		</form>
 	</div>
 </center>
-
-	<footer>
-		<div class="row">
-
-
-
-			<div class="col-12">
-				<div id="footerLinks">
-					<ul>
-						<a href="#">
-							<li>על האתר</li>
-						</a>
-						<a href="#">
-							<li>איך מגיעים </li>
-						</a>
-						<a href="#">
-							<li>צור קשר</li>
-						</a>
-
-
-					</ul>
-					<p>הפלד 7, חולון מס' 03-6412849</p>
-					<p style="font-size: 12px;">&copy כל הזכויות שמורות לעמית בנדט, רובי סומך ועידן זולברג</p>
-				</div>
-
-			</div>
-
-
-
-
-		</div>
-
-	</footer>
-		    <?php include 'footer.php'; ?>
+	<?php include 'footer.php'; ?>
 </body>
 
 
