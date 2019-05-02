@@ -119,7 +119,7 @@ session_start();
 
 </div>
 		
-
+	<?php include 'footer.php'; ?>
 
 	</body>
 	
