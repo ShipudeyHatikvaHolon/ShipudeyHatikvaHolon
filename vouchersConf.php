@@ -1,7 +1,7 @@
 <?php 
 
 
-
+include_once 'header.php';
 $user = $_SESSION['user_id'][$id];
 if (!$user)
 {
@@ -156,7 +156,7 @@ $sql = "SELECT * FROM category where id_category=$cat";
     
 ?>	
 	
-
+<?php require 'footer.php'?>
 
 
 </html>
