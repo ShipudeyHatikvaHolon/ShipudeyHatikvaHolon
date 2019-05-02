@@ -1,7 +1,7 @@
 
 <?php
 require_once 'configur.php';
-
+  include_once 'header.php';
 
 	if (!isset($_SESSION['access_token'])) 
 	{
@@ -134,7 +134,7 @@ if(empty($password)){
 
 			</div>
 		</div>
-		
+		<?php include('footer.php') ?>
 	</body>
 
 	
