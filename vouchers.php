@@ -1,4 +1,4 @@
-
+<?php  include_once 'header.php'; ?>
 <?php 
 
 
@@ -52,7 +52,9 @@ $user = $_SESSION['user_id'][$id];
 	</div>
 	
 
-
+<footer>
+<?php require 'footer.php'?>
+</footer>
 </body>
 
 </html>
