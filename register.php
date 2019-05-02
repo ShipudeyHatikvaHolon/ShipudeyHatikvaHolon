@@ -5,6 +5,11 @@
 
 <!DOCTYPE html>
 
+<?php
+
+include_once 'header.php';
+
+?>
 
 <?php
   require_once "configGoogle.php";
@@ -80,7 +85,7 @@
 
 			</div>
 		</div>
-		
+		<?php include('footer.php') ?>
 	</body>
 
 	</html>
