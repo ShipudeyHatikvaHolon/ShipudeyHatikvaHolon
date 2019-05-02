@@ -3,7 +3,11 @@
 session_start();
 
 		?>
+<?php
 
+include_once 'header.php';
+
+?>
 
 
 
@@ -78,7 +82,7 @@ session_start();
 		</div>
 
 	</footer>
-	
+		    <?php include 'footer.php'; ?>
 </body>
 
 
