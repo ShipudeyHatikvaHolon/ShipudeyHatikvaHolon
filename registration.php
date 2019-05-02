@@ -1,6 +1,6 @@
 <?php
 require_once 'configur.php';
-
+  include_once 'header.php';
 ?>
 
 	<?php
@@ -126,7 +126,7 @@ if(empty($password)){
 
 			</div>
 		</div>
-		
+		<?php include('footer.php') ?>
 	</body>
 	
 	
