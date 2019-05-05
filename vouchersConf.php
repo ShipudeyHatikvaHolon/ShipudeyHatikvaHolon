@@ -91,12 +91,12 @@ else
 
 
 
-$sqlFind="SELECT * FROM voucher WHERE user_id=$user and category_id= $cat";
+$sqlFind="SELECT * FROM vouchers WHERE user_id=$user and category_id= $cat";
 
 
 if(mysqli_num_rows(mysqli_query($conn,$sqlFind))==0)
 {
-  $sql1="INSERT INTO voucher(user_id,category_id,purchase_date,vouchers_left) values ( '$user',' $cat','$date', $addVouchers)";
+  $sql1="INSERT INTO vouchers(user_id,category_id,purchase_date,vouchers_left) values ( '$user',' $cat','$date', $addVouchers)";
 	  if ($result=mysqli_query($conn,$sql1))
      {
     $message .=  "New record created successfully";
