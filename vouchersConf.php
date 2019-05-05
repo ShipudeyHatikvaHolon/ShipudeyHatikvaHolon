@@ -121,7 +121,7 @@ else
 }
 
 
-  $sql1=" UPDATE voucher SET vouchers_left= vouchers_left+$addVouchers, purchase_date='$date' WHERE user_id=$user and category_id= $cat ";
+  $sql1=" UPDATE vouchers SET vouchers_left= vouchers_left+$addVouchers, purchase_date='$date' WHERE user_id=$user and category_id= $cat ";
 	  if ($result=mysqli_query($conn,$sql1))
      {
     $message .=  "New record created successfully";
