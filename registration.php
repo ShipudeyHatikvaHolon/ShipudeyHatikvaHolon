@@ -108,12 +108,6 @@ if(empty($password)){
 	
 	else{
 	    echo '<center class="error">';
-			
-				echo '<p>';
-		echo "נרשמת בהצלחה!<br>תוכל להזמין תורים לאחר אישור חשבונך ב-24 השעות הקרובות.";
-		
-			 echo'</p>';
-			
 		echo "<a href='signin.php'>עבור לדף ההתחברות</a>";
 		  echo '</center>';
 	}
