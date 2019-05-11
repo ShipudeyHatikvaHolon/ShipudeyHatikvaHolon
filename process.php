@@ -61,11 +61,6 @@ session_start();
 		<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300 | Arimo" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
-    		<link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
 
 
 	<title>שיפודי התקווה</title>
@@ -108,8 +103,8 @@ session_start();
 
 			<div class="col-lg-2 col-sm-6" style="display:inline-block;"><a href="#"><button class="button">הזמן מקום</button></a></div>
 			<div class="col-lg-2 col-sm-6" style="display:inline-block;"><a href="#"><button class="button">הזמן משלוח </button></a></div>
-			<div class="col-lg-2 col-sm-6" style="display:inline-block;"><a href="#"><button class="button">רכישת שוברים</button></a></div>
-			<div class="col-lg-2 col-sm-6" style="display:inline-block;"><a href="#"><button class="button">צור קשר</button></a></div>
+			<div class="col-lg-2 col-sm-6" style="display:inline-block;"><a href="vouchers.php"><button class="button">רכישת שוברים</button></a></div>
+			<div class="col-lg-2 col-sm-6" style="display:inline-block;"><a href="contact.html"><button class="button">צור קשר</button></a></div>
 		
 		</div>
 		<div class="col-lg-2"></div>
