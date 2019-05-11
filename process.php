@@ -20,7 +20,6 @@ session_start();
 		if( $email == "amitbendo@gmail.com"){
 			$_SESSION['admin'] = true;
 			$_SESSION['message']  .= "הנך מועבר לעמוד ניהול המערכת";
-			header("refresh:3; url=admin.php");
 		}	
 		else if($email != "amitbendo@gmail.com"){
 		$_SESSION['user'] = true;
