@@ -11,7 +11,7 @@ unset($_SESSION['admin']);
 session_destroy();
 include_once 'header.php';
 
-header('refresh:2; url=index.html');
+header('refresh:2; url=index.php');
 
 ?>
 
