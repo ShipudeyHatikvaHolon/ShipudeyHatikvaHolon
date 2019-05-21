@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="google-site-verification" content="OYNQ7cDcgb6NU6hyGo5h_IgstcLFQdTh59m5j4sVFio" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300 | Arimo" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
@@ -15,7 +15,6 @@
 
 	<title>שיפודי התקווה חולון</title>
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
-
 
 </head>
 
@@ -58,6 +57,7 @@
 						<div class="modal fade" id="myModal" role="dialog">
 							<div class="modal-dialog">
 
+								<!-- Modal content-->
 								<div class="modal-content">
 									<div class="modal-header">
 										<button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -102,7 +102,7 @@
 					<div class="col-md-3">
 
 						<div id="logo">
-							<a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+							<a href="index.php"><img src="images/logo.png" alt="logo" /></a>
 						</div>
 					</div>
 
@@ -198,7 +198,6 @@
 
 		</footer>
 	</div>
-
 		<script>
 			$(document).ready(function() {
 				var imageDiv = $("#mainImage");
@@ -218,6 +217,10 @@
 				setInterval(nextBackground, 3000);
 
 				imageDiv.css('background-image', backgrounds[0]);
+			});
+
+			$('#centerBtn').on('click', function() {
+				window.location.href = 'deliveries.php';
 			});
 
 		</script>
