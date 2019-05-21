@@ -76,7 +76,7 @@ session_start();
 		
 		<main>
 		<div id="logo">
-							<a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+							<a href="index.php"><img src="images/logo.png" alt="logo" /></a>
 						</div>
 			
 			<div id="messageDiv">
@@ -98,7 +98,7 @@ session_start();
 		<div class="col-lg-1"></div>
 		
 			<div class="col-lg-9 col-12" id="buttons" style="display:inline-block;">
-				<div class="col-lg-2 col-sm-6" style="display:inline-block;"><a href="index.html"><button 
+				<div class="col-lg-2 col-sm-6" style="display:inline-block;"><a href="index.php"><button 
 				class="button">דף הבית</button></a></div>
 
 
