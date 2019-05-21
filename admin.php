@@ -125,7 +125,7 @@ a {
 		<div class="container">
 			<center>
 						<div class="col-lg-12" id="buttons">
-						<a class="button button--plain" href="index.html" style="color:red;">התנתקות</a>	
+						<a class="button button--plain" href="index.php" style="color:red;">התנתקות</a>	
 						</center>
 		</div>
 		</div>
