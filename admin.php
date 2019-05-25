@@ -1,8 +1,9 @@
 <?php
 require_once 'configur.php';
 session_start();
-
-
+if($_SESSION['admin'] != true) {
+	header('location: index.php');
+	exit;
 ?>
 
 
