@@ -1,9 +1,24 @@
 
-		<html>
+<html>
 <head>
 
 	<title>שיפודי התקווה</title>
-
+	<style>
+	    @media (max-width:576px){
+	    #facebookImg{
+	        width:100px;
+	    margin:0 auto;
+	    }
+	    #footerLinks{
+	        margin-bottom:5%;
+	        
+	    }
+	    
+footer{
+background:#fafafa;
+	    }
+	  }
+	</style>
 	
 </head>
 	<body>
@@ -16,10 +31,10 @@
 				<div class="col-12">
 					<div id="footerLinks">
 						<ul>
-							<a href="#">
+							<a href="map.html">
 								<li>מיקום </li>
 							</a>
-							<a href="#">
+							<a href="contact.php">
 								<li>צור קשר</li>
 							</a>
 
