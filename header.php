@@ -8,12 +8,51 @@ mysqli_set_charset($conn,"utf8");
 
 <head>
      <meta charset="utf-8">
-	
+	<!-- Required meta tags -->
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300 | Arimo" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
+
 
 	<title>שיפודי התקווה</title>
+	<style>
+body{
+    	font-family: 'Assistant', sans-serif;
+}
 
+		.right {
+			direction: rtl;
+			text-align: right;
+		}
+
+
+        #nav ul a li{
+
+	font-size: 22px;
+	padding: 20px;
+	margin-left: 30px;
+	color:#483D8B;
+}            
+        @media (max-width:576px){
+             #nav ul a li{
+                 padding:5px;
+                 margin: 0;
+                 margin-left:5px;
+                
+             }
+             body{
+                 margin-bottom:20px;
+                 font-size:18px;
+                     font-family: 'Assistant', sans-serif;
+
+             }
+             
+        }
+	</style>
 </head>
 
 <body>
@@ -29,19 +68,30 @@ mysqli_set_charset($conn,"utf8");
 				isLoggedIn();
 				
 						function isLoggedIn(){
-							$logged = $_SESSION['user'];
-							$admin = $_SESSION['admin'];
+							if( isset($_SESSION['user']) ) {
+								$logged = $_SESSION['user'];
+							} else  {
+								$logged = false;
+								$_SESSION['user'] = false;
+							}
+
+							if( isset($_SESSION['admin']) ) {
+								$admin = $_SESSION['admin'];
+							} else  {
+								$admin = false;
+								$_SESSION['admin'] = false;
+							}
 							
 							if($logged){
 								
 								
-								echo '<span class="right" style="color:#222;">שלום, <span id="name">' . $_SESSION['name'][$id] . '</span> <br> <a href="logout.php "style="color:red;">התנתק</a> </span>';
+								echo '<span class="right" style="color:#222;">שלום, <span id="name">' . $_SESSION['user_name'] . '</span> <br> <a href="logout.php "style="color:red;">התנתק</a> </span>';
 								
 							}	
 							
 							else if($admin){
 							    echo "הנך מחובר כמנהל";
-							    echo "<br> <a href='#'>דף ניהול ראשי</a>";
+							    echo "<br> <a href='admin.php'>דף ניהול ראשי</a>";
 							    echo '&nbsp &nbsp &nbsp <a href="logout.php" style="color:red;">התנתק</a>';
 							}
 							else{
@@ -63,11 +113,11 @@ mysqli_set_charset($conn,"utf8");
 
 				<div id="nav">
 					<ul>
-						<a  href="#" >
+						<a  href="calendarTest4.php" >
 							<li  style="color:orange;">הזמנת שולחן במסעדה</li>
 
 						</a>
-						<a href="#">
+						<a href="deliveries.php">
 							<li style="color:orange;">משלוחים</li>
 
 						</a>
