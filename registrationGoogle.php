@@ -10,7 +10,6 @@ require_once 'configur.php';
 	}
 ?>
 
-
 	<?php
 
 $name = "";
