@@ -366,5 +366,4 @@ require_once 'header_admin.php';
 
 </body>
 
-</html>
-	
+</html>	
