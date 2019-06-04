@@ -8,7 +8,6 @@ if(!empty($_SESSION['id'])) {
 }
 ?>
 
-
 <html>
 
 <head>
