@@ -106,7 +106,7 @@ a {
 			
 						<div class="col-lg-12" id="buttons">
 						    <center>
-														<!-- <a class="button button--plain" href="https://calendar.google.com/calendar/r?tab=mc">יומן המסעדה</a>	 -->
+														
 													<a class="button button--plain" href="https://calendar.google.com/calendar/embed?src=s.hatikva2018%40gmail.com&ctz=Asia%2FJerusalem">יומן המסעדה</a>			 
 						<a class="button button--plain" href="reports&charts3.php">עמוד דוחות</a>	
 												<a class="button button--plain" href="tablesAdmin.php">ניהול שולחנות</a>
@@ -122,16 +122,16 @@ a {
 			<center>
 						<div class="col-lg-12" id="buttons">
 						<a class="button button--plain" href="vouchers_admin.php">ניהול שוברים</a>			
-						<!-- <a class="button button--plain" href="inventory.php">ניהול חנות</a>					 -->
+											 -->
 						<a class="button button--plain" href="orders_admin.php">ניהול הזמנות משלוחים\שולחנות</a>
-						<!-- <a class="button button--plain" href="upload.php">ניהול מוצרים</a>	 -->
+						
 						<a class="button button--plain" href="upload.php">ניהול מלאי</a>
 						</div>		
 						</center>
 		</div>
 		</div>
 
-		<!-- <div class="row">
+		<div class="row">
 		<div class="container">
 			<center>
 						<div class="col-lg-12" id="buttons">
