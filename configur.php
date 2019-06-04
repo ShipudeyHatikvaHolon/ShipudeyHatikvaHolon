@@ -1,7 +1,7 @@
 <?php 
 $servername = "localhost:3306";
 $username = "robiso_robiso";
-$password = "rakhapoel";
+$password = "rakmaccabi";
 
 $message = '';
 
@@ -21,7 +21,7 @@ mysqli_query($conn ,"set collation_connection='utf8'");
 mysqli_set_charset($conn,"utf8");
 // Check connection
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+     die("Connection failed: " . $conn->connect_error);
 } 
 
 // Display messages about success and errors
