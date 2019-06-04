@@ -1,12 +1,13 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-	
+	<!-- Required meta tags -->
 	<meta charset="UTF-8">
 	<meta name="google-site-verification" content="OYNQ7cDcgb6NU6hyGo5h_IgstcLFQdTh59m5j4sVFio" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	
+	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300 | Arimo" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
@@ -25,21 +26,27 @@
 
 
 			<div class="row">
-
+			
 				<div class="col-12">
 					<nav>
 						<div class="col-12">
 							<div id="topnav">
 								<ul>
+								<?php if(empty($_SESSION['user_name'])): ?>
 									<a href="register.php">
 										<li>הרשמה</li>
 									</a>
 
 									<li id="logBtn" data-toggle="modal" data-target="#myModal">התחברות</li>
+									<?php else: ?>
 
+<?php echo '<li><span class="right" style="color:#fff;">שלום, <span id="name" style="color:white;">' . $_SESSION['user_name'] . '</span> <br> <a href="logout.php "style="color:red;">התנתק</a> </span></li>'; ?>
+
+<?php endif; ?>
 								</ul>
 
 							</div>
+
 						</div>
 
 
@@ -57,7 +64,7 @@
 						<div class="modal fade" id="myModal" role="dialog">
 							<div class="modal-dialog">
 
-								
+								<!-- Modal content-->
 								<div class="modal-content">
 									<div class="modal-header">
 										<button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -87,10 +94,10 @@
 
 						<div id="nav">
 							<ul>
-								<a href="#">
+								<a href="calendarTest4.php">
 									<li>הזמנת שולחן במסעדה</li>
 								</a>
-								<a href="#">
+								<a href="deliveries.php">
 									<li>משלוחים</li>
 								</a>
 								<a href="vouchers.php">
@@ -198,6 +205,14 @@
 
 		</footer>
 	</div>
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery fir,st, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
 		<script>
 			$(document).ready(function() {
 				var imageDiv = $("#mainImage");
