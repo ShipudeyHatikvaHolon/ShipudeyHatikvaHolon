@@ -1,29 +1,37 @@
 <?php  include_once 'header.php'; ?>
+
+
 <?php 
 
-
-$user = $_SESSION['user_id'][$id];
+if(!empty($_SESSION['id'])) {
+	$user = $_SESSION['id'];
+}
 ?>
 
 
 <html>
 
 <head>
-
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<link rel="stylesheet" href="vouchers.css" />
 	
 	<script src="vouchers.js"></script>
-
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
 </head>
 
 
 <body>
+	<?php displayMessage(); ?>
 	<div class="row">
 		<div class="col-md-6" id="manooy">
 <h2> רכישת שוברים</h2>
 		<p>	לפניכם תפריט השוברים במסעדה, אנא בחרו את סוג השובר המבוקש.
 			<br>
-	לאחר בחירת השובר, הוסיפו את פרטיכם האישים וההזמנה תשלח לאישור.
+על כל שובר ניתן לראות את פרטי השובר באמצעות לחיצה על כפתור "הצג פרטי שובר".
 	</br>
 	<br>
 לתשומת לבכם , תשלום על השובר המוזמן תתבצע בעת הביקור הראשון במסעדה , במזומן או בכרטיס אשראי בלבד. 
@@ -42,7 +50,7 @@ $user = $_SESSION['user_id'][$id];
 </select>
 		<div id="target"></div>
 		
-			<button type-"submit" class="action-button shadow animate blue" onclick="">בצע הזמנה</button>
+			<button type="submit" class="action-button shadow animate blue" onclick="">בצע הזמנה</button>
 			</form>
 		<button class="action-button shadow animate blue" id="showInfo" onclick="getInfo()">הצג פרטי שובר</button>	
 	
@@ -54,7 +62,7 @@ $user = $_SESSION['user_id'][$id];
 
 <footer>
 <?php require 'footer.php'?>
-</footer>
+</footer>	
 </body>
 
 </html>
