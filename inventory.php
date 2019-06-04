@@ -30,7 +30,7 @@ $result = mysqli_query($conn, $query);
 		
 		<link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">	
 		<link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<link rel="stylesheet" href="inventory.css"/>	
+		<link rel="stylesheet" href="inventory.css"/>	
 	<script src="tabledit/jquery.tabledit.js"></script>
 	
 	
