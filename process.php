@@ -17,7 +17,7 @@ session_start();
 
 		$_SESSION['user_name'] = $row['name'];
 
-		if( $email == "amitbendo@gmail.com"){
+		if( $email == "s.hatikva2018@gmail.com"){
 			$_SESSION['admin'] = true;
 			$_SESSION['adminId'] = $row['user_id'];
 			$_SESSION['id'] = $row['user_id'];
@@ -28,11 +28,7 @@ session_start();
 		$_SESSION['user'] = true;
 		$id = $row['user_id'];
 		$_SESSION['id'] = $id;
-	// 	foreach($row as $key => $value){
-	// $_SESSION[$key][$id] = $value;
-	// 	}
-		
-		
+				
 		
 		$_SESSION['message']  .= "התחברת בהצלחה!<br>";
 		
