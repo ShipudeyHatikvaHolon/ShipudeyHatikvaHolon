@@ -425,5 +425,4 @@ a {
 
 	<?php break; ?>
 
-
 <?php endswitch; ?>
