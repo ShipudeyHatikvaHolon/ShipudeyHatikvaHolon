@@ -1,7 +1,7 @@
 <?php
-
+require_once 'configur.php';
 session_start();
-
+$connect = $conn;
 ?>
 
 
@@ -10,13 +10,25 @@ session_start();
 	<head>
 		<meta charset="UTF-8">
 		
+		<style>
+			form{
+				direction: rtl;
+			}
+			.title{
+				font-weight: bold;
+			}
+		
+			.description{
+				font-size: 16px;
+				color:#483D8B;
+			}
+		</style>
 	</head>	
 	
 	<body>
 		
 		<?php 
 	
-$connect = mysqli_connect('localhost:3306', 'robiso', 'rakmaccabi', 'robiso_hatikva');
 		
 mysqli_set_charset($connect,"utf8");
 	   $q = intval($_GET['id_category']);
@@ -25,7 +37,7 @@ mysqli_set_charset($connect,"utf8");
 	
 
 if ($result->num_rows > 0) {
-   
+    // output data of each row
 	
 
     while($row = $result->fetch_assoc()) {
