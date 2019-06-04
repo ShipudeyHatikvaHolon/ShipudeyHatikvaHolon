@@ -1,7 +1,7 @@
 <?php 
 $servername = "localhost:3306";
 $username = "robiso_robiso";
-$password = "rakmaccabi";
+$password = "rakhapoel";
 
 $message = '';
 
