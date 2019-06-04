@@ -10,7 +10,7 @@ if (!$user)
     echo 'alert("על מנת לבצע רכישת שוברים יש להרשם לאתר")';
     echo '</script>';
     
-      echo '<script language="javascript">';
+    echo '<script language="javascript">';
     echo 'location.href = "signin.php"';
     echo '</script>';
     
