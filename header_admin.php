@@ -10,7 +10,7 @@ mysqli_set_charset($conn,"utf8");
 
 <head>
      <meta charset="utf-8">
-	<!-- Required meta tags -->
+	<!-- Required meta tags --
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- Bootstrap CSS -->
