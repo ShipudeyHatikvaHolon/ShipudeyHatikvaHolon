@@ -62,11 +62,11 @@
 		}
 
 		.glyphicon {
-			padding: 2px;
+		  padding: 2px;
 		}
 
 		thead tr th {
-			text-align: center;
+		  text-align: center;
 		}
 		
 		h3{
