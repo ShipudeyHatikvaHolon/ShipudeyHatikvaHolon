@@ -1,0 +1,225 @@
+*{
+	box-sizing: border-box;
+	background-color: #fafafa;
+	
+	padding: 0;
+	margin: 0;
+	text-overflow: ellipsis;
+	white-space:normal;
+	
+}
+
+body{
+	text-overflow: ellipsis;
+	white-space: normal;
+	box-sizing: border-box;
+	font-family: 'Assistant', sans-serif;
+	background-color: #fafafa;
+}
+
+
+
+h4{
+font-size: 14px;
+height:70px;
+}
+.inputs{
+	
+	margin: 0 auto;
+	
+}
+
+
+
+
+
+
+
+.products{
+	padding: 5px;
+	border: 0.2px solid #333;
+	border-radius: 5px;
+	text-overflow: ellipsis;
+  /* Required for text-overflow to do anything */
+  white-space:normal;
+	margin-bottom: 10px;
+  font-size: 10px;
+  position: relative;
+}
+
+h1{
+            padding:15px;
+        
+            text-align:right;
+            font-family: calibri;
+               color:#41414E;
+text-shadow: -3px -1px 8px #9A99A1;
+
+
+            
+
+        }
+
+* {box-sizing: border-box;}
+
+.container {
+  direction: rlt;
+}
+
+.img-magnifier-container {
+  position: relative;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid #000;
+  border-radius: 50%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 100px;
+  height: 100px;
+}
+.products img{
+	width:60%;
+	margin:10px auto;
+	
+
+}
+
+#myimage{
+	
+}
+
+
+
+
+.products img:hover{
+	
+	transition:  1s;
+}
+
+.products input[type=submit]{
+	display: block;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+#facebookImg{
+	position: relative;
+	float:left;
+	bottom: 50px;
+}
+
+#topnav ul a li{
+	color:#333;
+}
+
+#logBtn{
+	color:#333;
+}
+
+footer{
+	overflow: hidden;
+}
+
+
+
+
+.table {
+    margin: 0px auto;
+    float: none;
+	
+}
+.row {
+    margin: 0px auto;
+    float: none;
+}
+.centered{
+    float: none;
+    margin: 0 auto;
+}
+.button {
+    background: #6394F8;
+    color:white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+    border-radius: 3px;
+    font-size: 16px;
+    margin: 25px 0 15px 0;
+}
+ .button:visited {
+      text-decoration: none;
+      color: white;
+}
+.button:hover {
+    background: #7fa9ff;
+    text-decoration: none;
+    color: white;
+}
+.button:active {
+    text-decoration: none;
+    color: white;
+}
+.btn-danger {
+      font-size: 12px;
+      padding: 3px;
+}
+.btn-danger:hover {
+      text-decoration: none;
+  }
+a {
+      text-decoration: none;
+}
+a:hover {
+      text-decoration: none;
+  }
+h3 {
+      margin-top: 0px;
+	padding: 5px;
+}
+ 
+table tr th{
+	text-align: right;
+}
+
+#removeItem{
+	text-align: center;
+	border-radius: 50%;
+}
+.order-text-deliveries {
+  font-size: 14px;
+}
+.order-title {
+  margin-bottom: 10px;
+  padding: 3px;
+}
+
+.inputs, .order-title {
+  text-align: right;
+  direction: rtl;
+}
+.message {
+  text-align: center;
+}
+
+.products img.product-image {
+  width: 200px;
+  height: 200px;
+}
+
+.product-title {
+  text-align: right;
+  margin-right: 20px;
+}
+
+.error-in-stock {
+  color:red;
+  padding:2px;
+  text-align:left;
+  font-weight:bold;
+  position: absolute;
+  top: 270px;
+  right: 0;
+}
