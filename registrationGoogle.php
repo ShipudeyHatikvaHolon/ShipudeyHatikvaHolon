@@ -60,8 +60,13 @@ if(empty($password)){
     if ($user['email'] === $email) {
       array_push($errors, "כתובת מייל זו כבר קיימת במערכת");
     }
+    
 }
-
+	if (count($errors) == 0){
+		
+		$sql = "INSERT INTO users (name, gender, email, phone, password) VALUES ('$name','$gender','$email','$phone','$password')";
+		mysqli_query($conn, $sql);
+}
 
 	
 	
