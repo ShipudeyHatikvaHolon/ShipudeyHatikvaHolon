@@ -1,10 +1,5 @@
 <?php 
 
-session_start();
-
-		?>
-<?php
-
 include_once 'header.php';
 
 ?>
@@ -15,12 +10,20 @@ include_once 'header.php';
 <html>
 
 <head>
-
+	<script src="fort.min.js"></script>
+	<link rel="stylesheet" href="fort.min.css">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300 | Arimo" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
 
 	<title>שיפודי התקווה סניף חולון</title>
-
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="signin.css">
 
 
 <style>
@@ -49,7 +52,9 @@ include_once 'header.php';
 		</form>
 	</div>
 </center>
-	<?php include 'footer.php'; ?>
+
+	    <?php include 'footer.php'; ?>
+
 </body>
 
 
