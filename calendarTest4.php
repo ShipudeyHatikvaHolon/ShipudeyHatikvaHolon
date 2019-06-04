@@ -33,7 +33,7 @@
     $sql = "SELECT `name` FROM tables";
     $result = mysqli_query($conn, $sql);
       while ($res=mysqli_fetch_assoc($result)){
-        $finelResults[]=$res;
+         $finelResults[]=$res;
       }
 
 
