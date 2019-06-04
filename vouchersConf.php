@@ -6,7 +6,7 @@ $user = $_SESSION['id'];
 $message = '';
 if (!$user)
 {
-     echo '<script language="javascript">';
+    echo '<script language="javascript">';
     echo 'alert("על מנת לבצע רכישת שוברים יש להרשם לאתר")';
     echo '</script>';
     
