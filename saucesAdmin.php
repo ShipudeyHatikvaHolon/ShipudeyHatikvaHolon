@@ -11,7 +11,6 @@ $action = filter_input(INPUT_GET, 'action');
 $products = [];
 $id = filter_input(INPUT_GET, 'id');
 
-
 $name = filter_input(INPUT_GET, 'name', FILTER_SANITIZE_STRING);
 $min_amount = filter_input(INPUT_GET, 'min_amount', FILTER_VALIDATE_INT);
 $amount = filter_input(INPUT_GET, 'amount', FILTER_VALIDATE_INT); 
