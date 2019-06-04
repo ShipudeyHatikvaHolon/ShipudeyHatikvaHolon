@@ -256,6 +256,5 @@ require_once 'header_admin.php';
 	</script>
 
 </body>
-
 </html>
 	
