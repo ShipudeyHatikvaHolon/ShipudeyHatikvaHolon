@@ -4,8 +4,6 @@ session_start();
 $connect = $conn;
 ?>
 
-
-
 <html lang="he">
 	<head>
 		<meta charset="UTF-8">
