@@ -102,7 +102,6 @@ text-align: right;
 				</div>
 				<div class="col-lg-3"></div>
 
-
 			</div>
 		</div>
 		<?php include('footer.php') ?>
