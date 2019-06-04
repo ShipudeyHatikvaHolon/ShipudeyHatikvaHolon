@@ -1,5 +1,7 @@
 <?php
-session_start();
+if(!isset($_SESSION))
+	session_start();
+	
 require_once 'configur.php';
 mysqli_set_charset($conn,"utf8");
 ?>
@@ -8,10 +10,10 @@ mysqli_set_charset($conn,"utf8");
 
 <head>
      <meta charset="utf-8">
-	
+	<!-- Required meta tags -->
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	
+	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300 | Arimo" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
@@ -19,7 +21,30 @@ mysqli_set_charset($conn,"utf8");
 
 
 	<title>שיפודי התקווה</title>
+	<style>
+body{
+    	font-family: 'Assistant', sans-serif;
+}
 
+		.right {
+			direction: rtl;
+			text-align: right;
+		}
+
+
+
+}            
+        @media (max-width:576px){
+             body{
+                 margin-bottom:20px;
+                 font-size:18px;
+                     font-family: 'Assistant', sans-serif;
+
+             }
+             
+        }
+        #logo{float: right;}
+	</style>
 </head>
 
 <body>
@@ -35,13 +60,24 @@ mysqli_set_charset($conn,"utf8");
 				isLoggedIn();
 				
 						function isLoggedIn(){
-							$logged = $_SESSION['user'];
-							$admin = $_SESSION['admin'];
+
+							if(isset($_SESSION['user'])) {
+								$logged = $_SESSION['user'];
+							} else {
+								$logged = false;
+							}
+
+							if(isset($_SESSION['admin'])) {
+								$admin = $_SESSION['admin'];
+							} else {
+								$admin = false;
+							}
+
 							
 							if($logged){
 								
 								
-								echo '<span class="right" style="color:#222;">שלום, <span id="name">' . $_SESSION['name'][$id] . '</span> <br> <a href="logout.php">התנתק</a> </span>';
+								echo '<span class="right" style="color:#222;">שלום, <span id="name">' . $_SESSION['user_name'] . '</span> <br> <a href="logout.php">התנתק</a> </span>';
 								
 							}	
 							
