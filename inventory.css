@@ -1,0 +1,33 @@
+body {
+	background: #f1f1f1;
+	font-family: 'Assistant', sans-serif;
+}
+
+#nav ul a li {
+	color: #483D8B;
+}
+
+.tabs {
+    display: flex;
+    background-color: orange;
+    border-radius: 15px;
+    justify-content: flex-end;
+}
+
+.tab {
+    padding: 13px;
+}
+
+.tab.current {
+background-color: white;
+}
+
+.tab.current a {
+color: orange;
+}
+
+.tab a {
+font-weight: bold;
+font-size: 24px;
+color: white;
+}
