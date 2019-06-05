@@ -30,7 +30,7 @@ if(isset($_POST['submit'])) {
 	if($result ) {
 		header('location: contact.php?message=ההודעה נשלחה בהצלחה');
 	} else {
-		header('location: contact.php?errorMessage=קרתה טקלה בשליחת ההודעה, אנא נסה שוב מאוחר יותר');
+		header('location: contact.php?errorMessage=קרתה תקלה בשליחת ההודעה, אנא נסה שוב מאוחר יותר');
 	}
 	exit;
 
