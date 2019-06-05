@@ -841,7 +841,7 @@ require_once 'header_admin.php';
             var input = $('input[name=rows]');
             var row = input.val().trim();
             input.val( parseInt(row)+1)
-            // console.log(row)
+            
             var content = "";
             content += '<tr>'; 
             content +=      '<td> <img onclick="deleteRow(this)" style="position: unset;" class="clear" data-name="delete_row" src="images/clear.svg" alt="clear"> <input class="id" type="hidden" name="id'+row+'" value="'+products[0].id+'">';
