@@ -24,7 +24,7 @@ session_start();
 			$_SESSION['message']  .= "הנך מועבר לעמוד ניהול המערכת";
 			header("refresh:3; url=admin.php");
 		}	
-		else if($email != "amitbendo@gmail.com"){
+		else if($email != "s.hatikva2018@gmail.com"){
 		$_SESSION['user'] = true;
 		$id = $row['user_id'];
 		$_SESSION['id'] = $id;
