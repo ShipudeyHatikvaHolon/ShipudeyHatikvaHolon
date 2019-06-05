@@ -25,7 +25,7 @@ switch($action) {
 			if($result) {
 				header('location: upload.php?message=המוצר נמחק בהצלחה');
 			} else {
-				header('location: upload.php?errorMessage=קרתה טקלה במחיקת המוצר');
+				header('location: upload.php?errorMessage=קרתה תקלה במחיקת המוצר');
 			}
 			exit;
 
