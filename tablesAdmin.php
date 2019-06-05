@@ -28,7 +28,7 @@ switch($action) {
 			if($result) {
 				header('location: tablesAdmin.php?message=השלוחן נמחק בהצלחה');
 			} else {
-				header('location: tablesAdmin.php?errorMessage=קרתה טקלה במחיקת השלוחן, אנא נסה שוב מאוחר יותר');
+				header('location: tablesAdmin.php?errorMessage=קרתה תקלה במחיקת השלוחן, אנא נסה שוב מאוחר יותר');
 			}
 			exit;
 
@@ -75,7 +75,7 @@ switch($action) {
 			$result = mysqli_query($conn, $sql);
 			
 			if( $result ) {
-				header('Location: tablesAdmin.php?message=השלוחן עודכן בהצלחה');
+				header('Location: tablesAdmin.php?message=השולחן עודכן בהצלחה');
 			}else {
 				header('Location: tablesAdmin.php?errorMessage=קרתה בעיה בעדכון השלוחן, אנא נסה שוב מאוחר יותר');
 			}
@@ -86,12 +86,12 @@ switch($action) {
 		case 'saveNew':
 
 			if(!$name) {
-				header('Location: tablesAdmin.php?errorMessage=שם השלוחן הוא שדה חובה');
+				header('Location: tablesAdmin.php?errorMessage=שם השולחן הוא שדה חובה');
 				exit;
 			}
 
 			if(!$description) {
-				header('Location: tablesAdmin.php?errorMessage=תיאור השלוחן הוא שדה חובה');
+				header('Location: tablesAdmin.php?errorMessage=תיאור השולחן הוא שדה חובה');
 				exit;
 			}
 
@@ -104,9 +104,9 @@ switch($action) {
 			$result = mysqli_query($conn, $sql);
 						
 			if( $result ) {
-				header('Location: tablesAdmin.php?message=השלוחן נשמר בהצלחה');
+				header('Location: tablesAdmin.php?message=השולחן נשמר בהצלחה');
 			}else {
-				header('Location: tablesAdmin.php?errorMessage=קרתה בעיה בשמירת השלוחן, אנא נסה שוב מאוחר יותר');
+				header('Location: tablesAdmin.php?errorMessage=קרתה בעיה בשמירת השלחון, אנא נסה שוב מאוחר יותר');
 			}
 			exit;
 
