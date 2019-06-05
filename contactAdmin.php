@@ -22,7 +22,7 @@
         if($result) {
             header('location: contactAdmin.php?message=ההודעה נמחקה בהצלחה');
         } else {
-            header('location: contactAdmin.php?errorMessage=קרתה טקלה במחיקת ההודעה, אנא נסה שוב מאוחר יותר');
+            header('location: contactAdmin.php?errorMessage=קרתה תקלה במחיקת ההודעה, אנא נסה שוב מאוחר יותר');
         }
         exit;
     }
