@@ -37,7 +37,7 @@ switch($action) {
 			if($result) {
 				header('location: vouchers_admin.php?message=השובר נמחק בהצלחה');
 			} else {
-				header('location: vouchers_admin.php?errorMessage=קרתה טקלה במחיקת השובר');
+				header('location: vouchers_admin.php?errorMessage=קרתה תקלה במחיקת השובר');
 			}
 			exit;
 
