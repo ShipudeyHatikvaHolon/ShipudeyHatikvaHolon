@@ -9,7 +9,7 @@ $locationRestaurant = 'מסעדת שיפודי התקווה, הפלד 7 חולו
 $emailSite = '';
 
 $dbname = "robiso_hatikva";
-// appointment	 	category 	order 	products 	tables users vouchers
+// adds  category  contacts order pitas	products sauces tableorders tables users vouchers
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
