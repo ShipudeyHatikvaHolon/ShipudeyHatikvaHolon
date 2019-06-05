@@ -29,7 +29,7 @@ switch($action) {
 			if($result) {
 				header('location: saucesAdmin.php?message=המוצר נמחק בהצלחה');
 			} else {
-				header('location: saucesAdmin.php?errorMessage=קרתה טקלה במחיקת המוצר');
+				header('location: saucesAdmin.php?errorMessage=קרתה תקלה במחיקת המוצר');
 			}
 			exit;
 
