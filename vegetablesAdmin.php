@@ -29,7 +29,7 @@ switch($action) {
 			if($result) {
 				header('location: vegetablesAdmin.php?message=המוצר נמחק בהצלחה');
 			} else {
-				header('location: vegetablesAdmin.php?errorMessage=קרתה טקלה במחיקת המוצר');
+				header('location: vegetablesAdmin.php?errorMessage=קרתה תקלה במחיקת המוצר');
 			}
 			exit;
 
