@@ -30,7 +30,7 @@ switch($action) {
 			if($result) {
 				header('location: pitasAdmin.php?message=המוצר נמחק בהצלחה');
 			} else {
-				header('location: pitasAdmin.php?errorMessage=קרתה טקלה במחיקת המוצר');
+				header('location: pitasAdmin.php?errorMessage=קרתה תקלה במחיקת המוצר');
 			}
 			exit;
 
